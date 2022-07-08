@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+:root {
+  --fs-primary: 'Kanit', sans-serif;;
+  --fs-clr-primary: #0B192B;
+  --fs-clr-secondary: #F0F1F1;
+  --body-primary: #223440;
+  --body-secondary: #F0F1F1;
+  --header-primary: #F0F1F1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  height: 100vh;
+  background-color: var(--body-primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary-header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: var(--header-primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.primary-header--text {
+  font-size: 2.5rem;
+  letter-spacing: .0625ch;
+  font-family: var(--fs-primary);
+  color: var(--fs-clr-primary);
+}
+
+/* Starship List Page */
+
+.starship-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  height: 90%;
+  width: 100%;
+  padding: 0rem 2rem;
+  background-color: var(--body-secondary);
+  font-family: var(--fs-primary);
+  color: var(--fs-clr-primary);
 }
 
-.App-link {
-  color: #61dafb;
+.starship-list--divider {
+  height: 4px;
+  background-color: var(--body-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.starship-list--title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.starship-list--table {
+  width: 100%;
+}
+
+.thead-row > td {
+  border-bottom: 1px solid var(--body-primary);
+}
+
+/* Starship Details Page */
+
+.starship-details {
+  display: flex;
+  flex-direction: column;
+
+  height: 90%;
+  width: 100%;
+  padding: 0rem 2rem;
+  background-color: var(--body-secondary);
+  font-family: var(--fs-primary);
+  color: var(--fs-clr-primary);
+}
+
+.starship-details--divider {
+  height: 4px;
+  background-color: var(--body-primary);
+}
+
+.starship-details--title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
